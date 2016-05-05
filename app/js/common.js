@@ -1,5 +1,10 @@
 $(function() {
 
+	$(".top-line .sf-menu").superfish({
+		cssArrows:  false,
+		hoverClass: ''
+	});
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
