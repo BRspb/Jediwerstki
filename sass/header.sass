@@ -90,7 +90,8 @@ h1, h2, h3, h4, h5, h6, .button
 	background-color: rgba(lighten($main-color, 2%), .8)
 	color: #fff
 	padding: 50px 0
-	position: relative
+	position: absolute
+	width: 100%
 	z-index: 1
 	box-shadow: rgba(255,255,255,.03) 0 5px 0 5px
 	&-content
@@ -215,12 +216,12 @@ h1, h2, h3, h4, h5, h6, .button
  		div
 	 		cursor: pointer
 	 		position: absolute
-	 		top: 180px
+	 		top: 400px
 	 		&:last-child
 	 			right: 0
 
 .slider
-	position: absolute
+	position: relative
 	top: 0px
 	width: 100%
 	overflow-x: hidden
@@ -254,8 +255,8 @@ h1, h2, h3, h4, h5, h6, .button
 				transform: scale(1)
 	.slide
 		color: #fff
-		padding-top: 280px
 		padding-bottom: 110px
+		padding-top: 220px
 		position: relative
 		h2
 			font-family: "RobotoCondensedLight", sans-serif
@@ -345,6 +346,7 @@ h1, h2, h3, h4, h5, h6, .button
 
   &.on span:after 
     transform: rotate(-45deg) translate(6px, -7px)
+    
 .mobile-mnu
 	padding: 7px 15px 5px 15px
 	color: $main-color
@@ -355,4 +357,5 @@ h1, h2, h3, h4, h5, h6, .button
 	b
 		display: block
 		text-align: center
+
 
