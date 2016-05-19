@@ -28,8 +28,13 @@ $(function() {
 	$("#my-menu").mmenu({
 		extention: [ 'widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black'],
 		navbar: {
-			title: "Меню"
+			title: ""
 		}
+	});
+
+	var api = $("#my-menu").data( "mmenu" );
+	api.bind("closed", function(){
+		$(".toggle-mnu").removeClass("on");
 	});
 
 	$(".mobile-mnu").click(function() {
@@ -37,6 +42,15 @@ $(function() {
 		mmAPI.open();
 		var thiss = $(this).find(".toggle-mnu");
 		thiss.toggleClass("on");
+		$(".main-mnu").slideToggle();
+		return false;
+	});
+
+	$(".mobile-mnu").click(function() {
+		var mmAPI = $("#my-menu").data( "mmenu" );
+		mmAPI.close();
+		var thiss = $(this).find(".toggle-mnu");
+		thiss.toggleClass("close");
 		$(".main-mnu").slideToggle();
 		return false;
 	});

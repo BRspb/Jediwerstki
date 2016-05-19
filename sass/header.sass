@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5, h6, .button
 	 	font-size: 36px
 	 	position: absolute
 	 	width: 100%
-	 	z-index: 2
+	 	z-index: 1
  		div
 	 		cursor: pointer
 	 		position: absolute
@@ -351,8 +351,9 @@ h1, h2, h3, h4, h5, h6, .button
 	padding: 7px 15px 5px 15px
 	color: $main-color
 	cursor: pointer
-	background-color: $accent
-	position: relative
+	background-color: rgba($accent, .9)
+	position: fixed
+	width: 100%
 	z-index: 2
 	b
 		display: block
