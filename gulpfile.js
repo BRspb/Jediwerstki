@@ -7,7 +7,7 @@ var gulp         = require('gulp'),
 		concat       = require('gulp-concat'),
 		uglify       = require('gulp-uglify');
 
-gulp.task('browser-sync', ['styles', 'scripts'], function() {
+gulp.task('browser-sync', ['sass', 'scripts'], function() {
 		browserSync.init({
 				server: {
 						baseDir: "./app"
@@ -16,7 +16,7 @@ gulp.task('browser-sync', ['styles', 'scripts'], function() {
 		});
 });
 
-gulp.task('styles', function () {
+gulp.task('sass', function () {
 	return gulp.src('sass/*.sass')
 	.pipe(sass({
 		includePaths: require('node-bourbon').includePaths
@@ -45,7 +45,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('watch', function () {
-	gulp.watch('sass/*.sass', ['styles']);
+	gulp.watch('sass/*.sass', ['sass']);
 	gulp.watch('app/libs/**/*.js', ['scripts']);
 	gulp.watch('app/js/*.js').on("change", browserSync.reload);
 	gulp.watch('app/*.html').on('change', browserSync.reload);
