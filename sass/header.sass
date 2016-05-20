@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6, .button
 	overflow-x: hidden
 	.owl-dots
 		position: absolute
-		bottom: 90px
+		bottom: 40px
 		width: 100%
 		text-align: center
 		.owl-dot
@@ -359,4 +359,55 @@ h1, h2, h3, h4, h5, h6, .button
 		display: block
 		text-align: center
 
+.sect-teaser
+	background-color: $main-color
+	color: #fff
+	padding: 28px
 
+.teaser
+	&-item
+		display: table-row
+	&-count
+		display: table-cell
+		vertical-align: middle
+		&-wrap
+			width: 43px
+			height: 43px
+			position: relative
+		.fa::before
+			font-size: 48px
+			color: lighten($main-color, 10%)
+		.teaser-number
+			position: absolute
+			top: 8px
+			width: 100%
+			text-align: center
+			font-family: "RobotoCondensedBold", sans-serif
+			font-size: 22px
+			color: $accent
+	&-text
+		display: table-cell
+		font-family: "RobotoCondensedLight", sans-serif
+		line-height: 20px
+		padding-left: 15px
+		opacity: .28
+
+.service-item
+	border: 5px lighten($main-color, 6%) solid
+	&:hover
+		.service-item-image
+			&::before
+				opacity: .7
+	&-image
+		min-height: 190px
+		background-size: cover
+		position: relative
+		&::before
+			position: absolute
+			content: ""
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background-color: $main-color
+			opacity: 0
