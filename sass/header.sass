@@ -362,11 +362,13 @@ h1, h2, h3, h4, h5, h6, .button
 .sect-teaser
 	background-color: $main-color
 	color: #fff
-	padding: 28px
+	padding: 28px 0 10px
 
 .teaser
 	&-item
 		display: table-row
+		>div
+			padding-bottom: 18px
 	&-count
 		display: table-cell
 		vertical-align: middle
@@ -392,16 +394,48 @@ h1, h2, h3, h4, h5, h6, .button
 		padding-left: 15px
 		opacity: .28
 
+.sect-services
+	.col-md-3
+		padding: 0
+
 .service-item
 	border: 5px lighten($main-color, 6%) solid
+	transition: all .5s ease
+	text-align: center
+	padding-bottom: 32px
+	background-color: #FFF
+	position: relative
+	h4
+		font-size: 18px
+		margin-bottom: 10px
 	&:hover
+		transform: scale(1.05)
+		border-color: $accent
+		box-shadow: rgba(0,0,0, .35) 0 0 32px
+		z-index: 2
 		.service-item-image
+			.fa
+				opacity: .4
 			&::before
 				opacity: .7
+		.service-item-stars
+			.fa
+				margin: 0 3px
+				color: $accent
 	&-image
 		min-height: 190px
 		background-size: cover
 		position: relative
+		.fa
+			font-size: 30px
+			color: #fff
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-left: -10px
+			margin-top: -10px
+			opacity: 0
+			transition: all .5s ease
 		&::before
 			position: absolute
 			content: ""
@@ -411,3 +445,22 @@ h1, h2, h3, h4, h5, h6, .button
 			left: 0
 			background-color: $main-color
 			opacity: 0
+			transition: all .5s ease
+	&-stars
+		font-size: 11px
+		color: #4b4b4b
+		.fa
+			margin-left: 1px
+			transition: all .5s ease
+	&-price
+		margin:
+			bottom: 26px
+			top: 5px
+		font:
+			size: em(17px)
+			family: "RobotoBold", sans-serif
+		span
+			font-size: em(28px)
+		.fa
+			color: $accent
+			font-size: 18px
