@@ -52,9 +52,7 @@ body textarea:required:valid
 		height: 100%
 		opacity: .85
 	h2
-		margin:
-			top: 20px
-			bottom: 45px
+		margin-bottom: 45px
 		font-size: em(40px)
 		line-height: em(18px)
 
@@ -65,16 +63,19 @@ body textarea:required:valid
 		background-color: $main-color
 
 .new-item
+	.new-item-text
+		margin-bottom: 25px
 	background-color: #efefef
 	padding: 1px 1px 32px 1px
 	color: #111
 	text-align: center
-	margin: 10px 0
+	margin: 20px 0
 	&:hover
 		.new-item-img
 			&::before
 				opacity: .7
-
+			.fa
+				opacity: .4
 	&-img
 		min-height: 180px
 		background-size: cover
@@ -106,10 +107,8 @@ body textarea:required:valid
 		font-size: em(14px)
 		margin:
 			top: 0
-			bottom: 36px
 	h4
-		margin-bottom: 12px
-	&-
+		margin-bottom: 20px
 
 //ALWAYS END
 @import "media"
