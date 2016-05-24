@@ -110,6 +110,35 @@ body textarea:required:valid
 	h4
 		margin-bottom: 20px
 
+.link-item
+	display: block
+	padding: 14px
+	border: 4px $accent solid
+	background-color: #FFF
+	color: #111
+	text-decoration: none
+	margin:
+		top: 15px
+		bottom: 15px
+	&::after
+		display: block
+		content: ''
+		clear: both
+	.h4
+		text-decoration: underline
+		line-height: 18px
+		font-size: 16px
+		display: block
+	&:hover
+		text-decoration: none
+		.h4
+			text-decoration: none
+	img
+		width: 34px
+		height: auto
+		float: left
+		margin-right: 10px
+
 //ALWAYS END
 @import "media"
 
