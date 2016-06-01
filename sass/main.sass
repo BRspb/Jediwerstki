@@ -6,6 +6,8 @@
 @import "app/libs/superfish/dist/css/superfish"
 @import "app/libs/font-awesome/scss/font-awesome"
 @import "app/libs/jQuery.mmenu/dist/css/jquery.mmenu.all"
+@import "app/libs/magnific-popup/dist/magnific-popup"
+@import "app/css/_magnific-custom"
 
 *::-webkit-input-placeholder
 	color: #666
@@ -138,6 +140,72 @@ body textarea:required:valid
 		height: auto
 		float: left
 		margin-right: 10px
+
+.main-foot
+	background-color: #0e0b13
+	padding: 70px 0
+	color: #FFF
+	.logo
+		opacity: .5
+	.footer-about
+		opacity: .6
+		font-size: em(13px)
+		margin-top: 28px
+	.top-pannel-box
+		margin-bottom: 25px
+		li
+			max-width: 100%
+			padding-bottom: 18px
+			font-size: em(13px)
+			&:hover
+				opacity: 1
+				transition: all .4s ease
+			a
+				font-size: em(17px)
+				color: #FFF
+				position: relative
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+	.services
+		.fa
+			font-size: 12px
+		li
+			width: 100%
+			display: block
+			padding-bottom: 10px
+			cursor: pointer
+		
+.developer
+	margin-top: -150px
+	img, a
+		color: #fff
+		display: block
+		float: right
+	a
+		&:hover, &:focus
+			text-decoration: none
+
+.popup-form
+	h3
+		text-align: center
+	label, input
+		display: block
+		width: 100%
+	label
+		margin-bottom: 10px
+		font-size: em(16px)
+	span
+		font-size: 14px
+		color: #999
+	input
+		border: $accent 3px solid
+		padding: 6px 15px
+		margin-top: 5px
+	.button
+		margin:
+			bottom: 10px
+			top: 20px
 
 //ALWAYS END
 @import "media"

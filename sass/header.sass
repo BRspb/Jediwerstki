@@ -29,9 +29,13 @@ h1, h2, h3, h4, h5, h6, .button,
 
 .text-right
 	text-align: right
-
+.text-right 
+	.top-pannel
+		text-align: right
 .text-left
 	text-align: left
+.text-center
+	text-align: center
 
 .top-line
 	background-color: $main-color
@@ -130,7 +134,6 @@ h1, h2, h3, h4, h5, h6, .button,
 		li
 			display: inline-block
 			max-width: 48%
-			opacity: .4
 			font-size: em(12px)
 			padding: 0 10px 0 22px
 			position: relative
@@ -152,20 +155,24 @@ h1, h2, h3, h4, h5, h6, .button,
 	font-family: "RobotoCondensedRegular", sans-serif
 	span
 		font-size: em(12px)
-		opacity: .3
 
 .top-email
 	font-size: 14px
 	a
 		color: #fff
 		text-decoration: underline
-	span
-		opacity: .3
 .top-phone,
 .top-email
 	.fa
 		margin-right: 3px
 
+.top-pannel-box, .top-phone, .top-email
+	li, span
+		opacity: .4
+		&:hover
+				opacity: 1
+				transition: all .4s ease
+				
 .button
 	color: #111
 	background-color: $accent
