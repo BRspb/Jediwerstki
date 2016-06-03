@@ -16,6 +16,10 @@ $(function(){
 		mainClass: 'my-mfp-slide-bottom'
 	});
 
+	$("a[href=#callback]").click(function() {
+		$("#callback .formname").val($(this).data("form"));
+	});
+
 	$(".service-item h4").equalHeights();
 	$(".new-item-text").equalHeights();
 	$(".link-item").equalHeights();
@@ -91,11 +95,13 @@ $(function(){
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			$(".success").addClass("visible");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
-			}, 1000);
+				$(".success").removeClass("visible");
+				$.magnificPopup.close();
+			}, 3000);
 		});
 		return false;
 	});

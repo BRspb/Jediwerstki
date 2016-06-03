@@ -187,6 +187,7 @@ body textarea:required:valid
 			text-decoration: none
 
 .popup-form
+	position: relative
 	h3
 		text-align: center
 	label, input
@@ -206,6 +207,23 @@ body textarea:required:valid
 		margin:
 			bottom: 10px
 			top: 20px
+
+.success
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	text-align: center
+	background-color: #FFF
+	z-index: 2
+	font-family: "RobotoCondensedBold", sans-serif
+	padding: 30px
+	text-transform: uppercase
+	align-items: center
+	&.visible
+		display: flex
 
 //ALWAYS END
 @import "media"
