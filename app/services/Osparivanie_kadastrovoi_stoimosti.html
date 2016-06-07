@@ -25,7 +25,7 @@
 	<style></style>
 	
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
-<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
 	<!-- Load CSS Start -->
 	<script>loadLocalStorageCSS( "webfonts");</script>
@@ -36,13 +36,13 @@
 
 	<!-- Load CSS Compilled without JS -->
 	<noscript>
-		<link rel="stylesheet" href="css/fonts.min.css">
-		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="../css/fonts.min.css">
+		<link rel="stylesheet" href="../css/main.min.css">
 	</noscript>
 
 </head>
 
-<body class="ishome">
+<body class="isnohome">
 
 	<header class="main-head">
 
@@ -55,10 +55,10 @@
 			<div class="container">
 
 				<ul class="sf-menu">
-					<li class="active"><a href="#">Главная</a></li>
+					<li class="active"><a href="index.html">Главная</a></li>
 					<li><a href="#">О компании</a></li>
 					<li>
-						<a href="Ocenca_nedvizhimosti.html">Услуги и стоимость<i class="fa fa-caret-down"></i></a>
+						<a href="#">Услуги и стоимость<i class="fa fa-caret-down"></i></a>
 						<ul>
 							<li><a href="Ocenca_nedvizhimosti.html">Оценка недвижимости</a></li>
 							<li><a href="Ocenca_zemli.html">Оценка земли</a></li>
@@ -129,292 +129,96 @@
 			</div>
 
 		</section>
-
-		<section class="slider-wrap">
-			<div class="container">
-				<div class="slider-nav-container">
-					<div class="slider-nav">
-						<div class="prev"><i class="fa fa-angle-left"></i></div>
-						<div class="next"><i class="fa fa-angle-right"></i></div>
-					</div>
-				</div>
-			</div>
-			<div class="slider">
-				
-				<!-- Slide Start -->
-				<div class="slide">
-					<div class="slide-bg" style="background-image: url(img/slide-1.jpg);"></div>
-					<div class="slide-content">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-10 col-md-9 col-xs-offset-1">
-									<div class="row">
-										<div class="col-md-6">
-											<h2>Первая оценочная компания Москвы</h2>
-											<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись предупреждал всемогущая там не последний. </p>
-											<a href="#" class="button">Список услуг</a>
-										</div>
-										<div class="col-md-6 hidden-sm hidden-xs">
-											<div class="slide-img-wrap">
-												<img src="img/slide-img-1.png" alt="alt">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Slide End -->
-				<!-- Slide Start -->
-				<div class="slide">
-					<div class="slide-bg" style="background-image: url(img/slide-1.jpg);"></div>
-					<div class="slide-content">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-10 col-md-9 col-xs-offset-1">
-									<div class="row">
-										<div class="col-md-6">
-											<h2>Первая оценочная компания Москвы</h2>
-											<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись предупреждал всемогущая там не последний. </p>
-											<a href="#" class="button">Список услуг</a>
-										</div>
-										<div class="col-md-6 hidden-sm hidden-xs">
-											<div class="slide-img-wrap">
-												<img src="img/slide-img-1.png" alt="alt">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Slide End --><!-- Slide Start -->
-				<div class="slide">
-					<div class="slide-bg" style="background-image: url(img/slide-1.jpg);"></div>
-					<div class="slide-content">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-10 col-md-9 col-xs-offset-1">
-									<div class="row">
-										<div class="col-md-6">
-											<h2>Первая оценочная компания Москвы</h2>
-											<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись предупреждал всемогущая там не последний. </p>
-											<a href="#" class="button">Список услуг</a>
-										</div>
-										<div class="col-md-6 hidden-sm hidden-xs">
-											<div class="slide-img-wrap">
-												<img src="img/slide-img-1.png" alt="alt">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Slide End -->
-			</div>
-		</section>
 		
 	</header>
-	<section class="sect-teaser">
+
+	<div class="content">
 
 		<div class="container">
-			
+
 			<div class="row">
+
+				<div class="col-md-9">
+					<article>
+						<h1>
+							Далеко-далеко за словесными горами в стране, гласных.
+						</h1>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+						<p>Семь, lorem, рекламных! От всех инициал приставка встретил буквенных однажды текста.</p>
+						<p>Даль подпоясал дорогу, свой дороге. По всей ведущими строчка рыбными, лучше.</p>
+						<p>Агенство путь жизни диких большого ручеек текстов даже раз над.</p>
+						<p>Большой однажды его океана, но свою безорфографичный парадигматическая заманивший, строчка.</p>
+						<p>Силуэт инициал последний пояс пустился заманивший запятых большого, ручеек своего.</p>
+						<p>Рыбными текстов не запятых, родного запятой заманивший текст власти диких.</p>
+						<p>Взобравшись всеми запятой его, продолжил однажды ручеек, бросил силуэт по всей.</p>
+						<p>Имени гор семь страна текста, переписали сбить деревни. Lorem, страна!</p>
+						<p>Безопасную, языком продолжил своих свою ведущими предупреждал рыбного, несколько речью!</p>
+					</article>
+				</div>
+				<div class="col-md-3">
+					<aside class="main-aside">
+						
+							<div class="service-item">
+								<div class="service-item-image" style="background-image: url(img/services/_3.jpg);">
+								</div>
+								<h4>Оспаривание кадастровой стоимости</h4>
+								<div class="service-item-stars">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="service-item-price">
+									<i class="fa fa-tags"></i>от <span>17 000</span>руб
+								</div>
+								<a href="#" class="button">Подробнее</a>
+							</div>
+
+							<div class="top-pannel-box services">
+								<h4>Услуги компании:</h4>
+								<ul class="menu-type-2">
+									<li>
+										<span><i class="fa fa-check" aria-hidden="true"></i></span>
+										<a href="Ocenca_nedvizhimosti.html">Оценка недвижимости</a>
+									</li>
+									<li>
+										<span><i class="fa fa-check" aria-hidden="true"></i></span>
+										<a href="Ocenca_zemli.html">Оценка земли</a>
+									</li>
+									<li class="active">
+										<span><i class="fa fa-check" aria-hidden="true"></i></span>
+										<a href="Osparivanie_kadastrovoi_stoimosti.html">Оспаривание кадастровой стоимости</a>
+									</li>
+									<li>
+										<span><i class="fa fa-check" aria-hidden="true"></i></span>
+										<a href="Ocenca_bisnesa.html">Оценка бизнеса</a>
+									</li>
+									<li>
+										<span><i class="fa fa-check" aria-hidden="true"></i></span>
+										<a href="Ocenca_investicionyh_proektov.html">Оценка инвестиционных проектов</a>
+									</li>
+									<li>
+										<span><i class="fa fa-check" aria-hidden="true"></i></span>
+										<a href="Ocenca_nematerialnyh_aktivov.html">Оценка нематериальных активов</a>
+									</li>
+									<li>
+										<span><i class="fa fa-check" aria-hidden="true"></i></span>
+										<a href="Ocenka_cenyh_bumag.html">Оценка ценных бумаг</a>
+									</li>
+									<li>
+										<span><i class="fa fa-check" aria-hidden="true"></i></span>
+										<a href="Pereocenca.html">Переоценка</a>
+									</li>							
+								</ul>
+							</div>
 				
-				<div class="col-sm-3">
-					<div class="teaser-item">
-						<div class="teaser-count">
-							<div class="teaser-count-wrap">
-								<i class="fa fa-star"></i>
-								<span class="teaser-number">10</span>
-							</div>
-						</div>
-						<div class="teaser-text">Мы уже 10 лет на рынке Москвы</div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="teaser-item">
-						<div class="teaser-count">
-							<div class="teaser-count-wrap">
-								<i class="fa fa-star"></i>
-								<span class="teaser-number">124</span>
-							</div>
-						</div>
-						<div class="teaser-text">У нас 124 довольных компаний клиентов</div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="teaser-item">
-						<div class="teaser-count">
-							<div class="teaser-count-wrap">
-								<i class="fa fa-star"></i>
-								<span class="teaser-number">12</span>
-							</div>
-						</div>
-						<div class="teaser-text">Мы имеем 12 офисов в Москве и подмосковье</div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="teaser-item">
-						<div class="teaser-count">
-							<div class="teaser-count-wrap">
-								<i class="fa fa-star"></i>
-								<span class="teaser-number">5</span>
-							</div>
-						</div>
-						<div class="teaser-text">Работаем более 5 лет с крупными клиентами</div>
-					</div>
+					</aside>
 				</div>
 
 			</div>
 
 		</div>
-		
-	</section>	
-	
-	<section class="sect-services">
-		
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-md-3 col-sm-6">
-					<div class="service-item">
-						<div class="service-item-image" style="background-image: url(img/services/_1.jpg);">
-						</div>
-						<h4>Оценка недвижимости</h4>
-						<div class="service-item-stars">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="service-item-price">
-							<i class="fa fa-tags"></i>от <span>1 700</span>руб
-						</div>
-						<a href="#" class="button">Подробнее</a>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="service-item">
-						<div class="service-item-image" style="background-image: url(img/services/_2.jpg);">
-						</div>
-						<h4>Оценка земли</h4>
-						<div class="service-item-stars">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="service-item-price">
-							<i class="fa fa-tags"></i>от <span>25 000</span>руб
-						</div>
-						<a href="#" class="button">Подробнее</a>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="service-item">
-						<div class="service-item-image" style="background-image: url(img/services/_3.jpg);">
-						</div>
-						<h4>Оспаривание кадастровой стоимости</h4>
-						<div class="service-item-stars">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="service-item-price">
-							<i class="fa fa-tags"></i>от <span>17 000</span>руб
-						</div>
-						<a href="#" class="button">Подробнее</a>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="service-item">
-						<div class="service-item-image" style="background-image: url(img/services/_4.jpg);">
-						</div>
-						<h4>Оценка бизнеса</h4>
-						<div class="service-item-stars">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="service-item-price">
-							<i class="fa fa-tags"></i>от <span>8 500</span>руб
-						</div>
-						<a href="#" class="button">Подробнее</a>
-					</div>
-				</div>
 
-				<div class="col-md-3 col-sm-6">
-					<div class="service-item">
-						<div class="service-item-image" style="background-image: url(img/services/_5.jpg);">
-						</div>
-						<h4>Оценка инвестиционных проектов</h4>
-						<div class="service-item-stars">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="service-item-price">
-							<i class="fa fa-tags"></i>от <span>1 950</span>руб
-						</div>
-						<a href="#" class="button">Подробнее</a>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="service-item">
-						<div class="service-item-image" style="background-image: url(img/services/_6.jpg);">
-						</div>
-						<h4>Оценка нематериальных активов</h4>
-						<div class="service-item-stars">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="service-item-price">
-							<i class="fa fa-tags"></i>от <span>999</span>руб
-						</div>
-						<a href="#" class="button">Подробнее</a>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="service-item">
-						<div class="service-item-image" style="background-image: url(img/services/_7.jpg);">
-						</div>
-						<h4>Оценка ценных бумаг</h4>
-						<div class="service-item-stars">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="service-item-price">
-							<i class="fa fa-tags"></i>от <span>143 600</span>руб
-						</div>
-						<a href="#" class="button">Подробнее</a>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="service-item">
-						<div class="service-item-image" style="background-image: url(img/services/_8.jpg);">
-						</div>
-						<h4>Переоценка</h4>
-						<div class="service-item-stars">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="service-item-price">
-							<i class="fa fa-tags"></i>от <span>1 700</span>руб
-						</div>
-						<a href="#" class="button">Подробнее</a>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-	</section>
+	</div>
 
 	<section class="sect-news sect-universal">
 		
@@ -688,6 +492,32 @@
 				<button class="button">Отправить</button>				
 			</div>
 			<input class="formname" type="hidden" name="Форма">
+		</form>
+		<form class="popup-form callback zoom-anim-dialog" id="order">
+
+			<div class="success">Спасибо за заявку! <br>
+				Наши менеджеры свяжутся с вами в ближайшее время.
+			</div>
+
+				<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Юрдис">
+			<input type="hidden" name="admin_email" value="burovik05@list.ru">
+			<input type="hidden" name="form_subject" value="Новая заявка с сайта Юрдис: Заказ услуги">
+			<!-- END Hidden Required Fields -->
+
+			<h3>Заказать: Оценка земли</h3>
+			<label>
+				<span>Ваше имя:</span>
+				<input type="text" name="Имя" placeholder="Введите ваше имя...">
+			</label>
+			<label>
+				<span>Ваш телефон:</span>
+				<input type="text" name=" Телефон" placeholder="Введите ваш телефон..." required>
+			</label>
+			<div class="text-center">
+				<button class="button">Заказать</button>				
+			</div>
+			<input class="formname" type="hidden" name="Услуга" value="Оценка земли">
 		</form>
 	</div>
 
